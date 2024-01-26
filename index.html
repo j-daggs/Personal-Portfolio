@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width-device-wideth, initial-scale=1.0">
+        <title>John Daggs Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/a6955b4098.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo.png" class="logo" >
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    <p> </p>
+                    <h1>Welcome to John Daggs, Software Development:</h1>
+                </div>
+            </div>
+        </div>
+        <!-- ---------------Games------------ -->
+        <div id="games">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <h1>Games</h1>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="game">
+                    <img src="path/to/game1.png" alt="Game 1">
+                    <h3>Game 1</h3>
+                    <p>Description of Game 1.</p>
+                    <a href="path/to/game1.html">Play Now</a>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="game">
+                    <img src="path/to/game2.png" alt="Game 2">
+                    <h3>Game 2</h3>
+                    <p>Description of Game 2.</p>
+                    <a href="path/to/game2.html">Play Now</a>
+                  </div>
+                </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        <!-- ---------------about------------ -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/me.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1>About Me</h1>
+                        <p>
+                            Things about me.
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick = "opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick = "opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id = "skills">
+                            <ul>
+                                <li><span>UI?UX</span><br>Designing Web/App Interfaces</li>
+                                <li><span>UI?UX</span><br>Designing Web/App Interfaces</li>
+                                <li><span>UI?UX</span><br>Designing Web/App Interfaces</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id = "experience">
+                            <ul>
+                                <li><span>Experience</span><br>Designing Web/App Interfaces</li>
+                                <li><span>UI?UX</span><br>Designing Web/App Interfaces</li>
+                                <li><span>UI?UX</span><br>Designing Web/App Interfaces</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id = "education">
+                            <ul>
+                                <li><span>School</span><br>Designing Web/App Interfaces</li>
+                                <li><span>UI?UX</span><br>Designing Web/App Interfaces</li>
+                                <li><span>UI?UX</span><br>Designing Web/App Interfaces</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ------------------service--------------- -->
+        <div id="services">
+            <div class = "container">
+                <h1 class = "sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-sharp fa-regular fa-laptop-code"></i>
+                        <h2>Web Design and Development</h2>
+                        <p>Description for this service</p>
+                        <a href = "#">learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-gear-code fa-2xs"></i>
+
+                        <h2>Software Engineering/Development</h2>
+                        <p>Description for this service</p>
+                        <a href = "#">learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-mobile-button" style="color: #ffffff;"></i>
+                        <h2>Mobile/Web/Cross-Platform App Design and Development</h2>
+                        <p>Description for this service</p>
+                        <a href = "#">learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+    </body>
+</html>
+
