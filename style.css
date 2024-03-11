@@ -15,6 +15,7 @@ body{
     background-size: cover;
     background-position:top;
     overflow: hidden;
+    height:115px;
 }
 .container{
     padding: 10px 10%;
@@ -65,14 +66,13 @@ nav ul li a:hover::after{
     width: 100%;
 }
 .header-text{
-    margin-top: 20%;
-    font-size: 13px;
-    position: relative;
-    bottom: 350px;
-    left: 405px;
+    font-size: 60px;
+    position: absolute;
+    top: 20px;
+    left:800px;
     text-shadow: 1.0px 0 black, 0 -1.0px black, -1.0px 0 black, 0 1.0px black;
     color: #64e8ff;
-    text-decoration: underline;
+    text-decoration: Bold;
 }
 /* ------------games------------ */
 #games{
