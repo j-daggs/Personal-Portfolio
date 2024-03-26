@@ -1,48 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE-edge">
-        <meta name="viewport" content="width-device-wideth, initial-scale=1.0">
-        <title>J-Daggs</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="https://kit.fontawesome.com/a6955b4098.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <div id="header">
-            <div class="container">
-                <nav>
-                    <img src="images/logo.png" class="logo" style="height:75px; width:75px;position:absolute; border-radius: 20px; top:20px; left:40px;">
-                    <ul style="position:absolute;top:30px; left:150px; height:75px; width:610px;">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J-Daggs</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a6955b4098.js" crossorigin="anonymous"></script>
+    <style>
+        /* Style to make the embedded PDF take up the full page */
+        #about {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+        embed {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo" style="height:75px; width:75px;position:absolute; border-radius: 20px; top:20px; left:40px;">
+                <ul style="position:absolute;top:30px; left:150px; height:75px; width:610px;">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
 
-            </div>
         </div>
-        <!-- ----------------about------------ -->
-        <div id="about">
-          <embed src="Resume.pdf" type="application/pdf" width="100%" height="600px" />
-        </div>
-        <script>
-            var tablinks = document.getElementsByClassName("tab-links");
-            var tabcontents = document.getElementsByClassName("tab-contents");
-            
-            function opentab(tabname){
-                for(tablink of tablinks){
-                    tablink.classList.remove("active-link");
-                }
-                for(tabcontent of tabcontents){
-                    tabcontent.classList.remove("active-tab");
-                }
-                event.currentTarget.classList.add("active-link");
-                document.getElementById(tabname).classList.add("active-tab");
+    </div>
+    <!-- ----------------about------------ -->
+    <div id="about">
+        <embed src="Resume.pdf" type="application/pdf" />
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
             }
-        </script>
-    </body>
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
 </html>
-
