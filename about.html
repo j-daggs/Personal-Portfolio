@@ -8,17 +8,27 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a6955b4098.js" crossorigin="anonymous"></script>
     <style>
-        /* Style to make the embedded PDF take up the full page */
-        #about {
-            width: 100vw;
-            height: 100vh;
-            overflow: hidden;
-        }
-        embed {
-            width: 100%;
-            height: 100%;
-        }
-    </style>
+      /* Style to make the embedded PDF take up the full page */
+      #about {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 100vw;
+          height: 100vh;
+          overflow: hidden;
+          margin-top:5px;
+      }
+      embed {
+          width: 100%;
+          height: 100%;
+      }
+      #resume-text {
+          margin-top: 20px;
+          font-size: 24px;
+          color: #333;
+      }
+  </style>
 </head>
 <body>
     <div id="header">
@@ -38,6 +48,7 @@
     </div>
     <!-- ----------------about------------ -->
     <div id="about">
+      <h1 id="resume-text" style="margin-bottom:20px;text-decoration:underline">Resume</h1>
         <embed src="Resume.pdf" type="application/pdf" />
     </div>
     <script>

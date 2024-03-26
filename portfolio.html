@@ -28,7 +28,7 @@
             <div class="container">
                 <div class="row">
                     <div class="about-col-1">
-                        <iframe src="FullStackSlideshow.html" width="100%" height="750px"></iframe>
+                        <iframe id="iframe-content" src="FullStackSlideshow.html" width="100%" height="750px"></iframe>
                     </div> 
                     <div class="about-col-2">
                         <h1>Personal Projects</h1>
@@ -126,20 +126,40 @@
             </div>
         </div>
         <script>
-            var tablinks = document.getElementsByClassName("tab-links");
-            var tabcontents = document.getElementsByClassName("tab-contents");
-            
-            function opentab(tabname){
-                for(tablink of tablinks){
-                    tablink.classList.remove("active-link");
-                }
-                for(tabcontent of tabcontents){
-                    tabcontent.classList.remove("active-tab");
-                }
-                event.currentTarget.classList.add("active-link");
-                document.getElementById(tabname).classList.add("active-tab");
-            }
-        </script>
+          // Function to handle tab clicks
+          function opentab(tabname) {
+              // Remove active class from all tab links
+              var tablinks = document.getElementsByClassName("tab-links");
+              for (var i = 0; i < tablinks.length; i++) {
+                  tablinks[i].classList.remove("active-link");
+              }
+              // Add active class to the clicked tab link
+              event.currentTarget.classList.add("active-link");
+              // Hide all tab contents
+              var tabcontents = document.getElementsByClassName("tab-contents");
+              for (var i = 0; i < tabcontents.length; i++) {
+                  tabcontents[i].classList.remove("active-tab");
+              }
+              // Show tab content based on tabname
+              var tabContent = document.getElementById(tabname);
+              tabContent.classList.add("active-tab");
+              // Update iframe src based on tabname
+              var iframeContent = document.getElementById("iframe-content");
+              switch (tabname) {
+                  case 'react':
+                      iframeContent.src = "FullStackSlideshow.html";
+                      break;
+                  case 'flutter':
+                      iframeContent.src = "FlutterSlideshow.html";
+                      break;
+                  case 'web':
+                      iframeContent.src = "PersonalWebsiteSlideshow.html";
+                      break;
+                  default:
+                      break;
+              }
+          }
+      </script>
     </body>
 </html>
 
