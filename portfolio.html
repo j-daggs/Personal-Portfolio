@@ -60,27 +60,35 @@
         <div id="about">
             <div class="container" style="height:100%">
                 <div class="row">
-                    <div class="about-col-1">
+                    <!-- <div class="about-col-1"> -->
                         <!-- <img src="images/Coding.jpg"> -->
-                        <iframe src="FullStackSlideshow.html" width="100%" height="750px"></iframe>
-                        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFOnpDbiPJ8zDmMpDtJsLj9MU8sRxIqA4tlz4jD9jC9hM8YlGyI1IzHKG+i" crossorigin="anonymous"></script>
-                    </div>
+                        <!-- <iframe src="FullStackSlideshow.html" width="100%" height="750px"></iframe>
+                        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFOnpDbiPJ8zDmMpDtJsLj9MU8sRxIqA4tlz4jD9jC9hM8YlGyI1IzHKG+i" crossorigin="anonymous"></script> -->
+                    <!-- </div>  -->
                     <div class="about-col-2">
                         <h1>Personal Projects</h1>
                         <p>
                             John Daggs
                         </p>
                         <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('skills')">Full Stack</p>
-                            <p class="tab-links" onclick = "opentab('experience')">Web Development</p>
-                            <p class="tab-links" onclick = "opentab('education')">Machine Learning/AI</p>
+                            <p class="tab-links active-link" onclick="opentab('react')">Home Services App (React Native)</p>
+                            <p class="tab-links" onclick = "opentab('flutter')">PickUp Sports App</p>
+                            <p class="tab-links" onclick = "opentab('web')">Personal-Website</p>
                         </div>
-                        <div class="tab-contents active-tab" id = "skills">
+                        <div class="tab-contents active-tab" id = "react">
                             <ul>
+                              <div class="image-grid">
+                                <img src="images/home-service-app-screenshots/booking.PNG" alt="Image 3">
+                                <img src="images/home-service-app-screenshots/bookingnote.PNG" alt="Image 4">
+                                <img src="images/home-service-app-screenshots/home.PNG" alt="Image 3">
+                                <img src="images/home-service-app-screenshots/cleaningcategory.PNG" alt="Image 4">
+                                <img src="images/home-service-app-screenshots/Profile.PNG" alt="Image 4">                                
+                                <img src="images/home-service-app-screenshots/cleaningpage.PNG" alt="Image 4">
+                            </div> 
                                 <li>
-                                  <span style="font-size:24px;text-decoration:Underline" >Full Stack Projects</span>
+                                  <span style="font-size:24px;text-decoration:Underline" >Full Stack Project</span>
                                   <ul>
-                                    <li style="font-size:18px">Home Services App:
+                                    <li style="font-size:18px; margin-top:15px">Home Services App:
                                       <ul style="font-size:14px">
                                         <li>Stack:
                                             <ul style="font-size:14px">
@@ -101,44 +109,62 @@
                                                 <ul style="font-size:14px">
                                                   <a href="https://github.com/j-daggs/home-service-app">https://github.com/j-daggs/home-service-app</a>
                                                   
-                                                 
+                                                  <div class="image-grid">
+                                                    <img src="images/home-service-app-screenshots/bookings.PNG" alt="Image 3">
+                                                    <img src="images/home-service-app-screenshots/login.PNG" alt="Image 3">
+                                                    <img src="images/home-service-app-screenshots/login2.PNG" alt="Image 4">
+                                                    <img src="images/home-service-app-screenshots/login3.PNG" alt="Image 3">
+                                                    <img src="images/home-service-app-screenshots/movingcategory.PNG" alt="Image 4">
+                                                    <img src="images/home-service-app-screenshots/movingpage.PNG" alt="Image 3">
+                                                </div>      
                                               
                                           </ul>
                                           </ul>
                                     </ul>
                                     </li>
 
+                                    
+
                                 <li>
                                   <span></span><br>
                                 </li>
                                 </ul>
                         </div>
-                        <div class="tab-contents" id = "experience">
+                        <div class="tab-contents" id = "flutter">
                             <ul>
-                                <li>
-                                  <span style="font-size:24px;text-decoration:Underline" >Work Experience</span>
-                                  <ul>  
-                                    <li>Position: Applications Engineer</li>
-                                    <li>Company: Stitch Golf</li>
-                                    <li>Since: 06-2023</li>
-                                    <li style="font-size:18px">Responsibilities:
+                              <span style="font-size:24px;text-decoration:Underline" >Full Stack Project</span>
+                              <li style="font-size:18px; margin-top:15px">PickUp Sports App:
+                                <ul style="font-size:14px">
+                                  <li>Stack:
                                       <ul style="font-size:14px">
-                                        <li> - Primary software engineer for a thriving small business venture</li>
-                                        <li> - End-to-end development, testing, and deployment of Software to improve B2B, Production, and Pre-Production processes</li>
-                                        <li> - Working in an Agile Environment, leveraging the power of Azure Cloud Service for optimal deployment of software services when necessary</li>
-                                        <li> - Developing, Upgrading, and Maintaining Applications, Automations, Microservices, Databases, and APIs that provide efficiencies to workflows in the business</li>
-                                        <li> - Utilizing software technologies such as: C# (.NET), JavaScript (Express.js, React.js, Node.js), Flutter, Python (Flask), Azure Functions, Azure Logic Apps, Microsoft Power Apps, SQL, ODATA, HTML/CSS, Rest APIs </li>
+                                        <li> - Flutter Framework</li>
+                                        <li> - Using Firebase</li>
+                                        <li> - Dart Programming</li>
+                                        <li> - Agile Environment</li>
+                                        <li>End to End Development to create a Cross-Platform Application that allows the user to:
+                                      <ul style="font-size:14px">
+                                        <li> - Log in, create an account, log out</li>
+                                        <li> - View pick-up sport events near the user </li>
+                                        <li> - Mark events the user is interested in</li>  
+                                        <li> - Comment on event postings (timestamped, sorted by timestamp)</li>                                        
+                                        <li> - Filter pick-up sports events by sport, skill level, and or marked as interested</li>
+                                        <li> - Create pick-up sports events with title, date/time, description, location, duration </li>
+                                        <li>Source Code:
+                                          <ul style="font-size:14px">
+                                            <a href="https://github.com/j-daggs/PickUp">https://github.com/j-daggs/PickUp</a> 
+                                            <li>Published Version:
+                                              <ul style="font-size:14px">
+                                                <a href="https://csc450-sp23-project-team-4.web.app">https://csc450-sp23-project-team-4.web.app</a>
                                     </ul>
-                                    </li>
-                                    <li>See more Details on my Resume <a href="about.html">Here</a></li>
-                                  </ul>
-                                </li>
+                                    </ul>
+                              </ul>
+                              </li>
                                 <li>
                                   <span></span><br>
                                 </li>
                                 </ul>
                         </div>
-                        <div class="tab-contents" id = "education">
+                        <div class="tab-contents" id = "web">
                             <ul style="font-size:18px">
                                 <li style="text-decoration:Bold">School: </li>
                                 <li> - University of North Carolina Wilmington</li>
