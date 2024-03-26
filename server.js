@@ -9,7 +9,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Define the directory where static files are located
-const publicDirectoryPath = path.join(__dirname, 'public');
+const publicDirectoryPath = path.join(__dirname);
 
 // Set up middleware to serve static files (e.g., HTML, CSS, images)
 app.use(express.static(publicDirectoryPath));
@@ -17,7 +17,7 @@ app.use(express.static(publicDirectoryPath));
 // Define route for the baseline URL
 app.get('/', (req, res) => {
     // Send the index.html file when accessing the baseline URL
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+    res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 // Start the server
