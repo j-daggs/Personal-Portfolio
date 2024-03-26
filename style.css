@@ -11,7 +11,7 @@ body{
 #header{
     width: 100%;
     height: 40vh;
-    background-image: url(images/background.gif);
+    background-color: #E8DACC;
     background-size: cover;
     background-position:top;
     overflow: hidden;
