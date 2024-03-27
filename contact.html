@@ -1,103 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE-edge">
-        <meta name="viewport" content="width-device-wideth, initial-scale=1.0">
-        <title>John Daggs Portfolio</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="https://kit.fontawesome.com/a6955b4098.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <div id="header">
-            <div class="container">
-                <nav>
-                    <img src="images/logo.png" class="logo" style="height:75px; width:75px;position:absolute; border-radius: 20px; top:20px; left:40px;">
-                    <ul style="position:absolute;top:30px; left:150px; height:75px; width:610px;">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-    
-            </div>
-        </div>
-        <!-- ---------------about------------ --->
-        <div id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="about-col-1">
-                        <img src="images/me.jpg">
-                    </div>
-                    <div class="about-col-2">
-                        <h1>About Me</h1>
-                        <p>
-                            Things about me.
-                        </p>
-                        <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                            <p class="tab-links" onclick = "opentab('experience')">Experience</p>
-                            <p class="tab-links" onclick = "opentab('education')">Education</p>
-                        </div>
-                        <div class="tab-contents active-tab" id = "skills">
-                            <ul>
-                                <li><span>UI?UX</span><br>Designing Web/App Interfaces</li>
-                                <li><span>UI?UX</span><br>Designing Web/App Interfaces</li>
-                                <li><span>UI?UX</span><br>Designing Web/App Interfaces</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id = "experience">
-                            <ul>
-                                <li>
-                                  <span style="font-size:24px;text-decoration:Underline" >Work Experience</span>
-                                  <ul>  
-                                    <li>Position: Applications Engineer</li>
-                                    <li>Company: Stitch Golf</li>
-                                    <li>Since: 06-2023</li>
-                                    <li style="font-size:18px">Responsibilities:
-                                      <ul style="font-size:14px">
-                                        <li> - Primary software engineer for a thriving small business venture - working in an Agile Environment, leveraging the power of Azure Cloud Service for optimal deployment of software services</li>
-                                        <li> - End-to-end development, testing, and deployment of Software that improve B2B, Production, and Pre-Production processes</li>
-                                        <li> - Developing, Upgrading, and Maintaining Applications, Automations, Microservices, Databases, and APIs that introduced substantial efficiencies to workflows in the business</li>
-                                        <li> - Utilizing software technologies such as: C# (.NET), JavaScript (Express.js, React.js, Node.js), Flutter, Python (Flask), Azure Functions, Azure Logic Apps, Microsoft Power Apps, SQL, ODATA, HTML/CSS, Rest APIs </li>
-                                    </ul>
-                                    </li>
-                                    <li>See more Details on my Resume <a href="about.html">Here</a></li>
-                                  </ul>
-                                </li>
-                                <li>
-                                  <span></span><br>
-                                </li>
-                                </ul>
-                        </div>
-                        <div class="tab-contents" id = "education">
-                            <ul>
-                                <li><span>School</span><br>University of North Carolina Wilmington
-                                <br> - Major: Computer Science (Systems Concentation)</li>
-                                <br> - GPA: 3.8
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <script>
-            var tablinks = document.getElementsByClassName("tab-links");
-            var tabcontents = document.getElementsByClassName("tab-contents");
-            
-            function opentab(tabname){
-                for(tablink of tablinks){
-                    tablink.classList.remove("active-link");
-                }
-                for(tabcontent of tabcontents){
-                    tabcontent.classList.remove("active-tab");
-                }
-                event.currentTarget.classList.add("active-link");
-                document.getElementById(tabname).classList.add("active-tab");
-            }
-        </script>
-    </body>
-</html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Daggs Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a6955b4098.js" crossorigin="anonymous"></script>
+    <style>
+        
+        /* Center the contact info and form sections */
+.contact-section {
+    text-align: center;
+    margin-bottom: 20px; /* Add margin between sections */
+}
 
+/* Set text color to black */
+.contact-section h2,
+.contact-section p,
+#emailForm label {
+    color: black;
+}
+        label {
+            color: black;
+        }
+        /* Center the form and make it fit the screen */
+        #emailFormContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto; /* Set height to 100% of viewport height */
+            flex-direction: column; /* Align items in column */
+            text-align:left;
+        }
+        #contactInfo {
+            margin-bottom: 2%; /* Add margin at the bottom */
+        }
+        #emailForm {
+            width: 80%; /* Adjust width as needed */
+            max-width: 1000px; /* Max width to maintain readability */
+            padding: 1%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        #emailForm label, #emailForm input, #emailForm textarea {
+            display: block;
+            margin-bottom: 15px;
+            font-size: 16px; /* Adjust font size as needed */
+            width: 100%; /* Make textboxes span the entire width */
+            box-sizing: border-box; /* Include padding and border in the width */
+        }
+        #emailForm button {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px; /* Adjust font size as needed */
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #emailForm button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo" style="height:75px; width:75px;position:absolute; border-radius: 20px; top:20px; left:40px;">
+                <ul style="position:absolute;top:30px; left:150px; height:75px; width:610px;">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- ---------------Contact------------ --->
+    <div id="contentContainer">
+        <div id="contactInfo" class="contact-section">
+            <h2>Contact Information</h2>
+            <p>Name: John Daggs</p>
+            <p>Phone: 717-884-4359</p>
+            <p>Email: johnadaggs@gmail.com</p>            
+            <p>Address: 403 Lemon Leaf Pl. Holly Springs, NC 27540</p>
+        </div>
+        <!-- ---------------Contact Form------------ --->
+        <div id="emailFormContainer">
+            <form id="emailForm">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        document.getElementById('emailForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            // Get form values
+            var email = document.getElementById('email').value;
+            var subject = document.getElementById('subject').value;
+            var message = document.getElementById('message').value;
+
+            // Construct mailto URL
+            var mailtoUrl = 'mailto:johnadaggs@gmail.com' +
+                            '?subject=' + encodeURIComponent(subject) +
+                            '&body=' + encodeURIComponent(message);
+
+            // Open default email client with pre-filled values
+            window.location.href = mailtoUrl;
+        });
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
