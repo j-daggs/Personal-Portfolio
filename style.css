@@ -42,8 +42,6 @@ nav {
 .picture_john {
     max-width: 50%; /* Changed to max-width for better responsiveness */
     height: auto;
-    border-radius: 50px;
-    padding: 1%;
 }
 
 nav ul {
