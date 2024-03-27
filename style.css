@@ -1,59 +1,61 @@
-*{
+/* Universal styles */
+* {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
-body{
+
+body {
     background: #fbf7f5;
-    color: #fff;
+    color: #232424; /* Changed text color to black */
 }
-#header{
+
+/* Header styles */
+#header {
     width: 100%;
-    height: 40vh;
+    height: auto; /* Changed height to auto for responsiveness */
     background-color: #E8DACC;
     background-size: cover;
-    background-position:top;
+    background-position: top;
     overflow: hidden;
-    height:115px;
-}
-.container{
-    padding: 10px 10%;
-    height:100%;
-    width:100%
-
+    padding: 10px 0; /* Adjusted padding */
 }
 
-nav{
+.container {
+    padding: 10px; /* Adjusted padding */
+}
+
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-
 }
 
 .logo {
-    width: 246px;
-    height: 195px;
-    background-color:#000000;
-    background-size: 100% 100%;
+    width: 100px; /* Adjusted logo size */
+    height: auto; /* Adjusted logo height for responsiveness */
+    border-radius: 20px;
 }
 
-
-nav ul li{
-    display: inline-block;
+nav ul {
+    display: flex;
     list-style: none;
-    margin: 10px 20px;
 }
 
-nav ul li a{
+nav ul li {
+    margin: 0 10px; /* Adjusted margin */
+}
+
+nav ul li a {
     color: #232424;
     text-decoration: none;
-    font-size: 24px;
-    text-shadow: 1.0px 0 black, 0 -1.0px black, -1.0px 0 black, 0 1.0px black;
+    font-size: 18px; /* Adjusted font size */
     position: relative;
 }
-nav ul li a::after{
+
+nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
@@ -63,121 +65,108 @@ nav ul li a::after{
     bottom: -6px;
     transition: 0.5s;
 }
-nav ul li a:hover::after{
+
+nav ul li a:hover::after {
     width: 100%;
 }
-.header-text{
-    font-size: 60px;
-    position: absolute;
-    top: 20px;
-    left:800px;
-    text-shadow: 1.0px 0 black, 0 -1.0px black, -1.0px 0 black, 0 1.0px black;
+
+.header-text {
+    font-size: 24px; /* Adjusted font size */
     color: #64e8ff;
-    text-decoration: Bold;
+    font-weight: bold;
 }
-/* ------------games------------ */
-#games{
-    padding: 80px 0;
-    color: #232424;
-    
+
+/* About section styles */
+#about {
+    padding: 40px 10%; /* Adjusted padding */
 }
-#games h3{
-    color: #ffffff;
-}
-#games p{
-    color: #ffffff;
-}
-/* ------------about------------ */
-#about{
-    padding: 80px 0;
-    color: #232424;
-}
-.row{
+
+.row {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    margin: 20px 0;
 }
-.about-col-1{
-    flex-basis:35%;
+
+.about-col-1,
+.about-col-2 {
+    flex-basis: 100%;
 }
-.about-col-1 img{
+
+.about-col-1 img {
     width: 100%;
     border-radius: 15px;
 }
-.about-col-2{
-    flex-basis: 60%;
-}
-.sub-title{
-   font-size: 60px;
-   font-weight: 600;
-   color: #232424;
-}
-.tab-titles{
-    display: flex;
-    margin: 20px 40px;
 
+.sub-title {
+    font-size: 36px; /* Adjusted font size */
+    font-weight: 600;
+    color: #232424;
+    margin-bottom: 20px; /* Added margin bottom */
 }
-.tab-links{
-    margin-right: 50px;
-    font-size: 18px;
-    font-weight:500;
-    cursor:pointer;
+
+.tab-titles {
+    display: flex;
+    flex-wrap: wrap; /* Adjusted to wrap on smaller screens */
+    margin-bottom: 20px; /* Added margin bottom */
+}
+
+.tab-links {
+    margin-right: 20px; /* Adjusted margin */
+    font-size: 16px; /* Adjusted font size */
+    font-weight: bold;
+    cursor: pointer;
     position: relative;
 }
-.tab-links::after{
+
+.tab-links::after {
     content: '';
     width: 0;
     height: 3px;
     background: #232424;
     position: absolute;
-    left:0;
+    left: 0;
     bottom: -8px;
     transition: 0.5s;
 }
 
-.tab-links.active-link::after{
+.tab-links.active-link::after {
     width: 50%;
 }
 
-.tab-contents ul li{
-    list-style: none;
-    margin: 10px 0;
-
-}
-.tab-contents ul li span{
-    color: #232424;
-    font-size: 14px;
-}
-.tab-contents{
+.tab-contents {
     display: none;
-
 }
-.tab-contents.active-tab{
+
+.tab-contents.active-tab {
     display: block;
 }
-/* ----------services---------------- */
 
-#services{
-    padding: 30px 0px;
-
+/* Services section styles */
+#services {
+    padding: 30px 10%; /* Adjusted padding */
 }
-.services-list{
+
+.services-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
+    grid-gap: 20px; /* Adjusted grid gap */
+    margin-top: 30px; /* Adjusted margin */
 }
-.services-list div{
+
+.services-list div {
     background: #6c6c6c;
-    padding: 40px;
-    font-size: 13px;
-    font-weight: 300;
-    border-right: 10px;
+    padding: 20px;
+    font-size: 14px; /* Adjusted font size */
+    font-weight: bold;
+    border-radius: 10px; /* Added border-radius */
 }
-.services-list div i{
-    font-size: 50px;
-    margin-bottom: 30px;
+
+.services-list div i {
+    font-size: 36px; /* Adjusted icon size */
+    margin-bottom: 10px; /* Adjusted margin */
 }
+
+/* Image grid */
 .image-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -188,4 +177,5 @@ nav ul li a:hover::after{
 .image-grid img {
     max-width: 100%;
     height: auto;
+    border-radius: 10px; /* Added border-radius */
 }
