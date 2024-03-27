@@ -6,18 +6,44 @@
   <title>Home Service App</title>
   <link href="node_modules\bootstrap\dist\css\bootstrap.min.css" rel="stylesheet">
   <style>
+    /* Adjusting carousel item size */
     .carousel-item img {
-      width:100%;
-      height:auto;
+      max-width: 100%; /* Ensure images fit within iframe */
+      max-height: 100vh; /* Adjust height to fit within iframe */
+      align-items: center;
     }
+    /* Ensuring the carousel fits within iframe */
     .carousel {
-        overflow: hidden;
-        width:100%;
-        height:auto;
+      overflow: hidden;
+      max-width: 100%;
+      height: auto;
+    }
+    /* Adjusting iframe size */
+    #iframe-container {
+      width: 100%; /* Adjust width as needed */
+      height: 100vh; /* Adjust height as needed */
+      overflow: hidden;
+    }
+      /* Adjusting carousel control buttons */
+    .carousel-control-prev,
+    .carousel-control-next {
+      background-color: rgb(105, 106, 105); /* Default button color */
+      color: rgb(24, 24, 24);
+      width: 15%; /* Adjusted button width */
+      height: auto; /* Adjusted height to auto */
+      border-radius: 5px; /* Added border-radius for rounded corners */
+      padding: 5px; /* Added padding for better appearance */
+      transition: background-color 0.3s ease; /* Added transition for smooth color change */
+    }
+    /* Button color change on hover */
+    .carousel-control-prev:hover,
+    .carousel-control-next:hover {
+      background-color: rgba(217, 218, 216, 0.99); /* Button color on hover */
     }
   </style>
 </head>
 <body>
+  <div id="iframe-container">
   <div class="container">
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
@@ -58,16 +84,17 @@
             <img src="images/home-service-app-screenshots/bookings.PNG" class="d-block w-100" alt="Slide 12">
           </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev" style="background-color: red; color: white;">
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous Slide</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next" style="background-color: red; color: white;">
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next Slide</span>
       </button>
     </div>
   </div>
+</div>
   <script src="node_modules\bootstrap\dist\js\bootstrap.bundle.min.js"></script>
   <script>
     // Manually initialize the carousel

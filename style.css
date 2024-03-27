@@ -34,16 +34,16 @@ nav {
 }
 
 .logo {
-    width: 100px; /* Adjusted logo size */
-    height: auto; /* Adjusted logo height for responsiveness */
+    max-width: 100px; /* Changed to max-width for better responsiveness */
+    height: auto;
     border-radius: 20px;
 }
 
 .picture_john {
-    width: 50%; /* Adjusted logo size */
-    height: auto; /* Adjusted logo height for responsiveness */
+    max-width: 50%; /* Changed to max-width for better responsiveness */
+    height: auto;
     border-radius: 50px;
-    padding:1%;
+    padding: 1%;
 }
 
 nav ul {
@@ -58,7 +58,7 @@ nav ul li {
 nav ul li a {
     color: #232424;
     text-decoration: none;
-    font-size: 18px; /* Adjusted font size */
+    font-size: 16px; /* Adjusted font size for better readability */
     position: relative;
 }
 
@@ -85,7 +85,7 @@ nav ul li a:hover::after {
 
 /* About section styles */
 #about {
-    padding: 40px 10%; /* Adjusted padding */
+    padding: 20px 10%; /* Adjusted padding for better spacing */
 }
 
 .row {
@@ -96,7 +96,12 @@ nav ul li a:hover::after {
 
 .about-col-1,
 .about-col-2 {
-    flex-basis: 100%;
+    flex-basis: calc(50% - 20px); /* Adjusted flex-basis */
+}
+
+.about-col-1 {
+    margin-right: 40px; /* Added margin to create space between columns */
+    margin-bottom: 20px; /* Added margin bottom for better spacing */
 }
 
 .about-col-1 img {
@@ -105,10 +110,10 @@ nav ul li a:hover::after {
 }
 
 .sub-title {
-    font-size: 36px; /* Adjusted font size */
+    font-size: 24px; /* Adjusted font size for better readability */
     font-weight: 600;
     color: #232424;
-    margin-bottom: 20px; /* Added margin bottom */
+    margin-bottom: 10px; /* Adjusted margin bottom */
 }
 
 .tab-titles {
@@ -119,7 +124,7 @@ nav ul li a:hover::after {
 
 .tab-links {
     margin-right: 20px; /* Adjusted margin */
-    font-size: 16px; /* Adjusted font size */
+    font-size: 14px; /* Adjusted font size for better readability */
     font-weight: bold;
     cursor: pointer;
     position: relative;
@@ -150,33 +155,33 @@ nav ul li a:hover::after {
 
 /* Services section styles */
 #services {
-    padding: 30px 10%; /* Adjusted padding */
+    padding: 20px 10%; /* Adjusted padding for better spacing */
 }
 
 .services-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjusted column width */
     grid-gap: 20px; /* Adjusted grid gap */
-    margin-top: 30px; /* Adjusted margin */
+    margin-top: 20px; /* Adjusted margin top */
 }
 
 .services-list div {
     background: #6c6c6c;
-    padding: 20px;
-    font-size: 14px; /* Adjusted font size */
+    padding: 15px; /* Adjusted padding for better spacing */
+    font-size: 14px; /* Adjusted font size for better readability */
     font-weight: bold;
     border-radius: 10px; /* Added border-radius */
 }
 
 .services-list div i {
-    font-size: 36px; /* Adjusted icon size */
+    font-size: 24px; /* Adjusted icon size */
     margin-bottom: 10px; /* Adjusted margin */
 }
 
 /* Image grid */
 .image-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjusted column width */
     gap: 20px;
     margin-top: 20px;
 }
