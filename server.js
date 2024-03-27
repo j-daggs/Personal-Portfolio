@@ -9,7 +9,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Define the directory where static files are located
-const publicDirectoryPath = path.join(__dirname);
+const publicDirectoryPath = __dirname;
 
 // Set up middleware to serve static files (e.g., HTML, CSS, images)
 app.use(express.static(publicDirectoryPath));
