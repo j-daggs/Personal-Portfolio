@@ -1,137 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE-edge">
-        <meta name="viewport" content="width-device-width, initial-scale=1.0">
-        <title>John Daggs Portfolio</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="https://kit.fontawesome.com/a6955b4098.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <div id="header">
-            <div class="container">
-                <nav>
-                    <img src="images/logo.png" class="logo">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-    
-            </div>
-        </div>
-        <!-- ---------------about------------ -->
-        <div id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="about-col-1">
-                        <img src="images/Coding.jpg">
-                    </div>
-                    <div class="about-col-2">
-                        <h1>Services</h1>
-                        <p>
-                            Things I can help you with!
-                        </p>
-                        <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('Application Development')">Application Development</p>
-                            <p class="tab-links" onclick = "opentab('Web Development')">Web Development</p>
-                            <p class="tab-links" onclick = "opentab('Cloud-Native Solutions: Automations/MicroServices/APIs')">Cloud-Native Solutions</p>
-                        </div>
-                        <div class="tab-contents active-tab" id = "Application Development">
-                            <ul>
-                                <li>
-                                  <span style="font-size:24px;text-decoration:Underline" >Work Experience</span>
-                                  <ul>  
-                                    <li>Position: Applications Engineer</li>
-                                    <li>Company: Stitch Golf</li>
-                                    <li>Since: 06-2023</li>
-                                    <li style="font-size:18px">Responsibilities:
-                                      <ul style="font-size:14px">
-                                        <li> - Primary software engineer for a thriving small business venture - working in an Agile Environment, leveraging the power of Azure Cloud Service for optimal deployment of software services</li>
-                                        <li> - End-to-end development, testing, and deployment of Software that improve B2B, Production, and Pre-Production processes</li>
-                                        <li> - Developing, Upgrading, and Maintaining Applications, Automations, Microservices, Databases, and APIs that introduced substantial efficiencies to workflows in the business</li>
-                                        <li> - Utilizing software technologies such as: C# (.NET), JavaScript (Express.js, React.js, Node.js), Flutter, Python (Flask), Azure Functions, Azure Logic Apps, Microsoft Power Apps, SQL, ODATA, HTML/CSS, Rest APIs </li>
-                                    </ul>
-                                    </li>
-                                    <li>See more Details on my Resume <a href="about.html">Here</a></li>
-                                  </ul>
-                                </li>
-                                <li>
-                                  <span></span><br>
-                                </li>
-                                </ul>
-                        </div>
-                        <div class="tab-contents" id = "Web Development">
-                            <ul>
-                                <li>
-                                  <span style="font-size:24px;text-decoration:Underline" >Work Experience</span>
-                                  <ul>  
-                                    <li>Position: Applications Engineer</li>
-                                    <li>Company: Stitch Golf</li>
-                                    <li>Since: 06-2023</li>
-                                    <li style="font-size:18px">Responsibilities:
-                                      <ul style="font-size:14px">
-                                        <li> - Primary software engineer for a thriving small business venture - working in an Agile Environment, leveraging the power of Azure Cloud Service for optimal deployment of software services</li>
-                                        <li> - End-to-end development, testing, and deployment of Software that improve B2B, Production, and Pre-Production processes</li>
-                                        <li> - Developing, Upgrading, and Maintaining Applications, Automations, Microservices, Databases, and APIs that introduced substantial efficiencies to workflows in the business</li>
-                                        <li> - Utilizing software technologies such as: C# (.NET), JavaScript (Express.js, React.js, Node.js), Flutter, Python (Flask), Azure Functions, Azure Logic Apps, Microsoft Power Apps, SQL, ODATA, HTML/CSS, Rest APIs </li>
-                                    </ul>
-                                    </li>
-                                    <li>See more Details on my Resume <a href="about.html">Here</a></li>
-                                  </ul>
-                                </li>
-                                <li>
-                                  <span></span><br>
-                                </li>
-                                </ul>
-                        </div>
-                        <div class="tab-contents" id = "Cloud-Native Solutions: Automations/MicroServices/APIs">
-                            <ul>
-                                <li>
-                                  <span style="font-size:24px;text-decoration:Underline" >Work Experience</span>
-                                  <ul>  
-                                    <li>Position: Applications Engineer</li>
-                                    <li>Company: Stitch Golf</li>
-                                    <li>Since: 06-2023</li>
-                                    <li style="font-size:18px">Responsibilities:
-                                      <ul style="font-size:14px">
-                                        <li> - Primary software engineer for a thriving small business venture - working in an Agile Environment, leveraging the power of Azure Cloud Service for optimal deployment of software services</li>
-                                        <li> - End-to-end development, testing, and deployment of Software that improve B2B, Production, and Pre-Production processes</li>
-                                        <li> - Developing, Upgrading, and Maintaining Applications, Automations, Microservices, Databases, and APIs that introduced substantial efficiencies to workflows in the business</li>
-                                        <li> - Utilizing software technologies such as: C# (.NET), JavaScript (Express.js, React.js, Node.js), Flutter, Python (Flask), Azure Functions, Azure Logic Apps, Microsoft Power Apps, SQL, ODATA, HTML/CSS, Rest APIs </li>
-                                    </ul>
-                                    </li>
-                                    <li>See more Details on my Resume <a href="about.html">Here</a></li>
-                                  </ul>
-                                </li>
-                                <li>
-                                  <span></span><br>
-                                </li>
-                                </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <script>
-            var tablinks = document.getElementsByClassName("tab-links");
-            var tabcontents = document.getElementsByClassName("tab-contents");
-            
-            function opentab(tabname){
-                for(tablink of tablinks){
-                    tablink.classList.remove("active-link");
-                }
-                for(tabcontent of tabcontents){
-                    tabcontent.classList.remove("active-tab");
-                }
-                event.currentTarget.classList.add("active-link");
-                document.getElementById(tabname).classList.add("active-tab");
-            }
-        </script>
-    </body>
-</html>
 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width-device-width, initial-scale=1.0">
+  <title>John Daggs Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a6955b4098.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/logo.png" class="logo">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="https://github.com/j-daggs" target="_blank">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/johndaggs" target="_blank">LinkedIn</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </div>
+  <!-- ---------------about------------ -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/Coding.jpg">
+        </div>
+        <div class="about-col-2">
+          <h1>Services</h1>
+          <p>
+            Things I can help you with!
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('Application Development')">Application Development</p>
+            <p class="tab-links" onclick="opentab('Web Development')">Web Development</p>
+            <p class="tab-links" onclick="opentab('Cloud-Native Solutions: Automations/MicroServices/APIs')">
+              Cloud-Native Solutions</p>
+          </div>
+          <div class="tab-contents active-tab" id="Application Development">
+            <ul>
+              <li>
+                <span style="font-size:24px;text-decoration:Underline">Work Experience</span>
+                <ul>
+                  <li>Position: Applications Engineer</li>
+                  <li>Company: Stitch Golf</li>
+                  <li>Since: 06-2023</li>
+                  <li style="font-size:18px">Responsibilities:
+                    <ul style="font-size:14px">
+                      <li> - Primary software engineer for a thriving small business venture - working in an Agile
+                        Environment, leveraging the power of Azure Cloud Service for optimal deployment of software
+                        services</li>
+                      <li> - End-to-end development, testing, and deployment of Software that improve B2B, Production,
+                        and Pre-Production processes</li>
+                      <li> - Developing, Upgrading, and Maintaining Applications, Automations, Microservices, Databases,
+                        and APIs that introduced substantial efficiencies to workflows in the business</li>
+                      <li> - Utilizing software technologies such as: C# (.NET), JavaScript (Express.js, React.js,
+                        Node.js), Flutter, Python (Flask), Azure Functions, Azure Logic Apps, Microsoft Power Apps, SQL,
+                        ODATA, HTML/CSS, Rest APIs </li>
+                    </ul>
+                  </li>
+                  <li>See more Details on my Resume <a href="about.html">Here</a></li>
+                </ul>
+              </li>
+              <li>
+                <span></span><br>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="Web Development">
+            <ul>
+              <li>
+                <span style="font-size:24px;text-decoration:Underline">Work Experience</span>
+                <ul>
+                  <li>Position: Applications Engineer</li>
+                  <li>Company: Stitch Golf</li>
+                  <li>Since: 06-2023</li>
+                  <li style="font-size:18px">Responsibilities:
+                    <ul style="font-size:14px">
+                      <li> - Primary software engineer for a thriving small business venture - working in an Agile
+                        Environment, leveraging the power of Azure Cloud Service for optimal deployment of software
+                        services</li>
+                      <li> - End-to-end development, testing, and deployment of Software that improve B2B, Production,
+                        and Pre-Production processes</li>
+                      <li> - Developing, Upgrading, and Maintaining Applications, Automations, Microservices, Databases,
+                        and APIs that introduced substantial efficiencies to workflows in the business</li>
+                      <li> - Utilizing software technologies such as: C# (.NET), JavaScript (Express.js, React.js,
+                        Node.js), Flutter, Python (Flask), Azure Functions, Azure Logic Apps, Microsoft Power Apps, SQL,
+                        ODATA, HTML/CSS, Rest APIs </li>
+                    </ul>
+                  </li>
+                  <li>See more Details on my Resume <a href="about.html">Here</a></li>
+                </ul>
+              </li>
+              <li>
+                <span></span><br>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="Cloud-Native Solutions: Automations/MicroServices/APIs">
+            <ul>
+              <li>
+                <span style="font-size:24px;text-decoration:Underline">Work Experience</span>
+                <ul>
+                  <li>Position: Applications Engineer</li>
+                  <li>Company: Stitch Golf</li>
+                  <li>Since: 06-2023</li>
+                  <li style="font-size:18px">Responsibilities:
+                    <ul style="font-size:14px">
+                      <li> - Primary software engineer for a thriving small business venture - working in an Agile
+                        Environment, leveraging the power of Azure Cloud Service for optimal deployment of software
+                        services</li>
+                      <li> - End-to-end development, testing, and deployment of Software that improve B2B, Production,
+                        and Pre-Production processes</li>
+                      <li> - Developing, Upgrading, and Maintaining Applications, Automations, Microservices, Databases,
+                        and APIs that introduced substantial efficiencies to workflows in the business</li>
+                      <li> - Utilizing software technologies such as: C# (.NET), JavaScript (Express.js, React.js,
+                        Node.js), Flutter, Python (Flask), Azure Functions, Azure Logic Apps, Microsoft Power Apps, SQL,
+                        ODATA, HTML/CSS, Rest APIs </li>
+                    </ul>
+                  </li>
+                  <li>See more Details on my Resume <a href="about.html">Here</a></li>
+                </ul>
+              </li>
+              <li>
+                <span></span><br>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+</body>
+
+</html>

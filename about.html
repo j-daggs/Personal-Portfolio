@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
@@ -8,29 +9,33 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a6955b4098.js" crossorigin="anonymous"></script>
     <style>
-      /* Style to make the embedded PDF take up the full page */
-      #about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    margin-top: 5px;
-}
+        /* Style to make the embedded PDF take up the full page */
+        #about {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            margin-top: 5px;
+        }
 
-embed {
-    width: 90%; /* Adjust the width as desired */
-    height: 80vh; /* Adjust the height as desired */
-}
-      #resume-text {
-          margin-top: 20px;
-          font-size: 24px;
-          color: #333;
-      }
-  </style>
+        embed {
+            width: 90%;
+            /* Adjust the width as desired */
+            height: 80vh;
+            /* Adjust the height as desired */
+        }
+
+        #resume-text {
+            margin-top: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+    </style>
 </head>
+
 <body>
     <div id="header">
         <div class="container">
@@ -42,6 +47,8 @@ embed {
                     <li><a href="services.html">Services</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="contact.html">Contact</a></li>
+                    <li><a href="https://github.com/j-daggs" target="_blank">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/johndaggs" target="_blank">LinkedIn</a></li>
                 </ul>
             </nav>
 
@@ -50,34 +57,37 @@ embed {
     <!-- ----------------about------------ -->
 
     <div id="about">
-      <h1>About Me</h1>
-      <p style="font-size:18px;margin:1%">
-        Hello! I'm John Daggs, an enthusiastic and innovative Applications Engineer passionate about 
-        leveraging technology to drive efficiency and streamline workflows. With a strong foundation in 
-        application development, web development, and database management, I thrive on creating end-to-end 
-        solutions that deliver tangible results. Whether it's designing sophisticated microservices, crafting 
-        intuitive applications, developing robust APIs, or engineering serverless databases on Azure. My 
-        journey in software engineering has been marked by a commitment to continuous learning, an agile
-        mindset, and a relentless pursuit of excellence. Let's collaborate to turn ideas into impactful realities. 
-      </p>
-      <p style="font-size:18px;margin:1%">        
-        Seeking new challenges and opportunities, I am an individual driven by initiative and a hunger for growth. 
-        I have a track record of seamlessly integrating into diverse projects and contributing effectively to ongoing endeavors. 
-        My enthusiasm lies in expanding my skill set to support employers in diversifying their capabilities and attracting new customers. 
-        With a strong work ethic, adaptability, and solid interpersonal skills, I excel in work environments and quickly adapt to new tasks. 
-        My focus is on continuous improvement and delivering solid outcomes.</p>
-      <h1 id="resume-text" style="margin-bottom:20px;text-decoration:underline">Resume</h1>
+        <h1>About Me</h1>
+        <p style="font-size:18px;margin:1%">
+            Hello! I'm John Daggs, an enthusiastic and innovative Applications Engineer passionate about
+            leveraging technology to drive efficiency and streamline workflows. With a strong foundation in
+            application development, web development, and database management, I thrive on creating end-to-end
+            solutions that deliver tangible results. Whether it's designing sophisticated microservices, crafting
+            intuitive applications, developing robust APIs, or engineering serverless databases on Azure. My
+            journey in software engineering has been marked by a commitment to continuous learning, an agile
+            mindset, and a relentless pursuit of excellence. Let's collaborate to turn ideas into impactful realities.
+        </p>
+        <p style="font-size:18px;margin:1%">
+            Seeking new challenges and opportunities, I am an individual driven by initiative and a hunger for growth.
+            I have a track record of seamlessly integrating into diverse projects and contributing effectively to
+            ongoing endeavors.
+            My enthusiasm lies in expanding my skill set to support employers in diversifying their capabilities and
+            attracting new customers.
+            With a strong work ethic, adaptability, and solid interpersonal skills, I excel in work environments and
+            quickly adapt to new tasks.
+            My focus is on continuous improvement and delivering solid outcomes.</p>
+        <h1 id="resume-text" style="margin-bottom:20px;text-decoration:underline">Resume</h1>
         <embed src="Resume.pdf" type="application/pdf" />
     </div>
     <script>
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
-        
-        function opentab(tabname){
-            for(tablink of tablinks){
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
                 tablink.classList.remove("active-link");
             }
-            for(tabcontent of tabcontents){
+            for (tabcontent of tabcontents) {
                 tabcontent.classList.remove("active-tab");
             }
             event.currentTarget.classList.add("active-link");
@@ -85,4 +95,5 @@ embed {
         }
     </script>
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
@@ -8,63 +9,82 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a6955b4098.js" crossorigin="anonymous"></script>
     <style>
-        
         /* Center the contact info and form sections */
-.contact-section {
-    text-align: center;
-    margin-bottom: 20px; /* Add margin between sections */
-}
+        .contact-section {
+            text-align: center;
+            margin-bottom: 20px;
+            /* Add margin between sections */
+        }
 
-/* Set text color to black */
-.contact-section h2,
-.contact-section p,
-#emailForm label {
-    color: black;
-}
+        /* Set text color to black */
+        .contact-section h2,
+        .contact-section p,
+        #emailForm label {
+            color: black;
+        }
+
         label {
             color: black;
         }
+
         /* Center the form and make it fit the screen */
         #emailFormContainer {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: auto; /* Set height to 100% of viewport height */
-            flex-direction: column; /* Align items in column */
-            text-align:left;
+            height: auto;
+            /* Set height to 100% of viewport height */
+            flex-direction: column;
+            /* Align items in column */
+            text-align: left;
         }
+
         #contactInfo {
-            margin-bottom: 2%; /* Add margin at the bottom */
+            margin-bottom: 2%;
+            /* Add margin at the bottom */
         }
+
         #emailForm {
-            width: 80%; /* Adjust width as needed */
-            max-width: 1000px; /* Max width to maintain readability */
+            width: 80%;
+            /* Adjust width as needed */
+            max-width: 1000px;
+            /* Max width to maintain readability */
             padding: 1%;
             border: 1px solid #ccc;
             border-radius: 5px;
         }
-        #emailForm label, #emailForm input, #emailForm textarea {
+
+        #emailForm label,
+        #emailForm input,
+        #emailForm textarea {
             display: block;
             margin-bottom: 15px;
-            font-size: 16px; /* Adjust font size as needed */
-            width: 100%; /* Make textboxes span the entire width */
-            box-sizing: border-box; /* Include padding and border in the width */
+            font-size: 16px;
+            /* Adjust font size as needed */
+            width: 100%;
+            /* Make textboxes span the entire width */
+            box-sizing: border-box;
+            /* Include padding and border in the width */
         }
+
         #emailForm button {
             width: 100%;
             padding: 12px;
-            font-size: 16px; /* Adjust font size as needed */
+            font-size: 16px;
+            /* Adjust font size as needed */
             background-color: #007bff;
             color: #fff;
             border: none;
             border-radius: 5px;
             cursor: pointer;
         }
+
         #emailForm button:hover {
             background-color: #0056b3;
         }
     </style>
 </head>
+
 <body>
     <div id="header">
         <div class="container">
@@ -76,6 +96,8 @@
                     <li><a href="services.html">Services</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="contact.html">Contact</a></li>
+                    <li><a href="https://github.com/j-daggs" target="_blank">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/johndaggs" target="_blank">LinkedIn</a></li>
                 </ul>
             </nav>
 
@@ -87,7 +109,7 @@
             <h2>Contact Information</h2>
             <p>Name: John Daggs</p>
             <p>Phone: 717-884-4359</p>
-            <p>Email: johnadaggs@gmail.com</p>            
+            <p>Email: johnadaggs@gmail.com</p>
             <p>Address: 403 Lemon Leaf Pl. Holly Springs, NC 27540</p>
         </div>
         <!-- ---------------Contact Form------------ --->
@@ -104,7 +126,7 @@
         </div>
     </div>
     <script>
-        document.getElementById('emailForm').addEventListener('submit', function(event) {
+        document.getElementById('emailForm').addEventListener('submit', function (event) {
             event.preventDefault(); // Prevent default form submission
 
             // Get form values
@@ -114,8 +136,8 @@
 
             // Construct mailto URL
             var mailtoUrl = 'mailto:johnadaggs@gmail.com' +
-                            '?subject=' + encodeURIComponent(subject) +
-                            '&body=' + encodeURIComponent(message);
+                '?subject=' + encodeURIComponent(subject) +
+                '&body=' + encodeURIComponent(message);
 
             // Open default email client with pre-filled values
             window.location.href = mailtoUrl;
@@ -124,11 +146,11 @@
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
 
-        function opentab(tabname){
-            for(tablink of tablinks){
+        function opentab(tabname) {
+            for (tablink of tablinks) {
                 tablink.classList.remove("active-link");
             }
-            for(tabcontent of tabcontents){
+            for (tabcontent of tabcontents) {
                 tabcontent.classList.remove("active-tab");
             }
             event.currentTarget.classList.add("active-link");
@@ -136,4 +158,5 @@
         }
     </script>
 </body>
+
 </html>

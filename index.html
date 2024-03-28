@@ -1,160 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE-edge">
-        <meta name="viewport" content="width-device-width, initial-scale=1.0">
-        <title>John Daggs Portfolio</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="https://kit.fontawesome.com/a6955b4098.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-      <div id="header">
-        <div class="container">
-            <nav>
-                <img src="images/logo.png" class="logo">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
 
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width-device-width, initial-scale=1.0">
+  <title>John Daggs Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a6955b4098.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/logo.png" class="logo">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="https://github.com/j-daggs" target="_blank">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/johndaggs" target="_blank">LinkedIn</a></li>
+        </ul>
+      </nav>
+
     </div>
-        <!-- ---------------about------------ -->
-        <div id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="about-col-1">
-                        <img src="images/me.jpg">
-                        <!-- <img src="images/Coding.jpg"style="margin-top:15px"> -->
-                        <!-- <img src="images/Johnny_Daggs_21.jpg" style="margin-top:15px"> -->
-                    </div>
-                    <div class="about-col-2">
-                        <h1>Introduction</h1>
-                        <p>
-                            John Daggs
-                        </p>
-                        <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                            <p class="tab-links" onclick = "opentab('experience')">Work Experience</p>
-                            <p class="tab-links" onclick = "opentab('education')">Education</p>
-                        </div>
-                        <div class="tab-contents active-tab" id = "skills">
-                            <ul>
-                              <span style="font-size:24px;text-decoration:Underline" >Skills</span>
-                                
-                                  
-                                  <ul>
-                                    <li style="font-size:18px;margin-left:1%">Application Development:
-                                      <ul style="font-size:14px;margin-left:1%">
-                                        <li> Frameworks such as React Native, .NET, Flutter </li>
-                                        <li>Work Experience:
-                                            <ul style="font-size:14px;margin-left:2%">
-                                              <li> Developing Business Applications for Stitch Golf</li>
-                                          </ul>
-                                    </ul>
-                                    </li>
-                                    <li style="font-size:18px;margin-left:1%">Web Development:
-                                        <ul style="font-size:14px;margin-left:1%">
-                                          <li> Frameworks such as Express.js, Django, ASP.NET, Flask, Angular.js, Bootstrap </li>
-                                          <li> HTML/CSS/JavaScript </li>
-                                          <li>Work Experience:
-                                            <ul style="font-size:14px;margin-left:2%">
-                                              <li> Developed a Web Application for Stitch Golf Sales Employees to View PowerBI Reports, Hosted on Azure through DevOps</li>
-                                          </ul>
-                                      </ul>
-                                      </li>
-                                      <li style="font-size:18px;margin-left:1%">Databases:
-                                        <ul style="font-size:14px;margin-left:1%">
-                                          <li> Relational (SQL) and Non-Relational (noSQL)</li>
-                                          <li> Database Platforms such as Microsoft SQL Server, SQLite, MySQL, Firebase</li>
-                                          <li> Querying Databases within Software</li>
-                                          <li>Work Experience:
-                                            <ul style="font-size:14px;margin-left:2%">
-                                              <li> Developing a Database for Stitch Golf to Manage Clients' Order Customizations with Microsoft SQL</li>
-                                              <li> Querying Databases in developing Applications, Automations, and APIs for Stitch Golf</li>
-                                          </ul>
-                                      </ul>
-                                      </li>
-                                      <li style="font-size:18px;margin-left:1%">Automations/Microservices:
-                                        <ul style="font-size:14px;margin-left:1%">
-                                          <li> Developing Automations and Microservices to Complete Business Tasks</li>
-                                          <li> Azure Functions/Azure Logic Apps, custom Webhook Receviers </li>
-                                          <li>Work Experience:
-                                            <ul style="font-size:14px;margin-left:2%">
-                                              <li> Maintaining, Testing, and Developing Automations at Stitch Golf</li>
-                                              <li> Replaced Previously Manual Processes with Automations built for Stitch Golf</li>
-                                          </ul>
-                                      </ul>
-                                      <li style="font-size:18px;margin-left:1%">APIs:
-                                        <ul style="font-size:14px;margin-left:1%">
-                                          <li> Interacting with APIs using JSON, XML, GraphQL</li>
-                                          <li> Developing custom APIs using Express.js, Hosted on Azure through DevOps</li>
-                                          <li>Work Experience:
-                                            <ul style="font-size:14px;margin-left:2%">
-                                              <li> Pulling, Inserting, Updating Data on various Platforms used by Stitch Golf through API calls </li>
-                                              <li> Interacting with APIs Developing Automation and Application Solutions for Stich Golf</li>
-                                          </ul>
-                                      </ul>
-                                      <li style="font-size:18px;margin-left:1%">Programming:
-                                        <ul style="font-size:14px;margin-left:1%">
-                                          <li> Programming Languages such as Javascript, Python, C#, C++, Dart, Java, C++ </li>
-                                      </ul>
-                                      </li>
-                                  </ul>
-                                  <span style="font-size:18px;" >See more Details on my Resume <a href="about.html">Here</a></span>
-                                </ul></div>
-                        </div>
-                        <div class="tab-contents" id = "experience">
-                            <ul>
-                              <span style="font-size:24px;text-decoration:Underline" >Work Experience</span>
-                                  <ul>  
-                                    <li style="margin-left:1%">Position: Applications Engineer</li>
-                                    <li style="margin-left:1%">Company: Stitch Golf</li>
-                                    <li style="margin-left:1%">Since: 06-2023</li>
-                                    <li style="font-size:18px;margin-left:1%">Responsibilities:
-                                      <ul style="font-size:14px;margin-left:2%">
-                                        <li> Primary software engineer for a thriving small business venture</li>
-                                        <li> End-to-end development, testing, and deployment of Software to improve B2B, Production, and Pre-Production processes</li>
-                                        <li> Working in an Agile Environment, leveraging the power of Azure Cloud Service for optimal deployment of software services when necessary</li>
-                                        <li> Developing, Upgrading, and Maintaining Applications, Automations, Microservices, Databases, and APIs that provide efficiencies to workflows in the business</li>
-                                        <li> Utilizing software technologies such as: C# (.NET), JavaScript (Express.js, React.js, Node.js), Flutter, Python (Flask), Azure Functions, Azure Logic Apps, Microsoft Power Apps, SQL, ODATA, HTML/CSS, Rest APIs, JSON/XML/GraphQL, and Azure Cloud Service </li>
-                                    </ul>
-                                    </li>
-                                  </ul>
-                                  <span style="font-size:18px" >See more Details on my Resume <a href="about.html">Here</a></span>                             
-                                </ul>
-                        </div>
-                        <div class="tab-contents" id = "education">
-                            <ul style="font-size:18px">
-                                <li style="text-decoration:Bold">School: University of North Carolina Wilmington</li>
-                                <li style="text-decoration:Bold">Degree: Bachelors of Science in Computer Science (Systems Concentration)
-                                <li style="text-decoration:Bold">GPA: 3.7</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  </div>
+  <!-- ---------------about------------ -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/me.jpg">
+          <!-- <img src="images/Coding.jpg"style="margin-top:15px"> -->
+          <!-- <img src="images/Johnny_Daggs_21.jpg" style="margin-top:15px"> -->
         </div>
-        <script>
-            var tablinks = document.getElementsByClassName("tab-links");
-            var tabcontents = document.getElementsByClassName("tab-contents");
-            
-            function opentab(tabname){
-                for(tablink of tablinks){
-                    tablink.classList.remove("active-link");
-                }
-                for(tabcontent of tabcontents){
-                    tabcontent.classList.remove("active-tab");
-                }
-                event.currentTarget.classList.add("active-link");
-                document.getElementById(tabname).classList.add("active-tab");
-            }
-        </script>
-    </body>
-</html>
+        <div class="about-col-2">
+          <h1>Introduction</h1>
+          <p>
+            John Daggs
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Work Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <span style="font-size:24px;text-decoration:Underline">Skills</span>
 
+
+              <ul>
+                <li style="font-size:18px;margin-left:1%">Application Development:
+                  <ul style="font-size:14px;margin-left:1%">
+                    <li> Frameworks such as React Native, .NET, Flutter </li>
+                    <li>Work Experience:
+                      <ul style="font-size:14px;margin-left:2%">
+                        <li> Developing Business Applications for Stitch Golf</li>
+                      </ul>
+                  </ul>
+                </li>
+                <li style="font-size:18px;margin-left:1%">Web Development:
+                  <ul style="font-size:14px;margin-left:1%">
+                    <li> Frameworks such as Express.js, Django, ASP.NET, Flask, Angular.js, Bootstrap </li>
+                    <li> HTML/CSS/JavaScript </li>
+                    <li>Work Experience:
+                      <ul style="font-size:14px;margin-left:2%">
+                        <li> Developed a Web Application for Stitch Golf Sales Employees to View PowerBI Reports, Hosted
+                          on Azure through DevOps</li>
+                      </ul>
+                  </ul>
+                </li>
+                <li style="font-size:18px;margin-left:1%">Databases:
+                  <ul style="font-size:14px;margin-left:1%">
+                    <li> Relational (SQL) and Non-Relational (noSQL)</li>
+                    <li> Database Platforms such as Microsoft SQL Server, SQLite, MySQL, Firebase</li>
+                    <li> Querying Databases within Software</li>
+                    <li>Work Experience:
+                      <ul style="font-size:14px;margin-left:2%">
+                        <li> Developing a Database for Stitch Golf to Manage Clients' Order Customizations with
+                          Microsoft SQL</li>
+                        <li> Querying Databases in developing Applications, Automations, and APIs for Stitch Golf</li>
+                      </ul>
+                  </ul>
+                </li>
+                <li style="font-size:18px;margin-left:1%">Automations/Microservices:
+                  <ul style="font-size:14px;margin-left:1%">
+                    <li> Developing Automations and Microservices to Complete Business Tasks</li>
+                    <li> Azure Functions/Azure Logic Apps, custom Webhook Receviers </li>
+                    <li>Work Experience:
+                      <ul style="font-size:14px;margin-left:2%">
+                        <li> Maintaining, Testing, and Developing Automations at Stitch Golf</li>
+                        <li> Replaced Previously Manual Processes with Automations built for Stitch Golf</li>
+                      </ul>
+                  </ul>
+                <li style="font-size:18px;margin-left:1%">APIs:
+                  <ul style="font-size:14px;margin-left:1%">
+                    <li> Interacting with APIs using JSON, XML, GraphQL</li>
+                    <li> Developing custom APIs using Express.js, Hosted on Azure through DevOps</li>
+                    <li>Work Experience:
+                      <ul style="font-size:14px;margin-left:2%">
+                        <li> Pulling, Inserting, Updating Data on various Platforms used by Stitch Golf through API
+                          calls </li>
+                        <li> Interacting with APIs Developing Automation and Application Solutions for Stich Golf</li>
+                      </ul>
+                  </ul>
+                <li style="font-size:18px;margin-left:1%">Programming:
+                  <ul style="font-size:14px;margin-left:1%">
+                    <li> Programming Languages such as Javascript, Python, C#, C++, Dart, Java, C++ </li>
+                  </ul>
+                </li>
+              </ul>
+              <span style="font-size:18px;">See more Details on my Resume <a href="about.html">Here</a></span>
+            </ul>
+          </div>
+        <div class="tab-contents" id="experience">
+          <ul>
+            <span style="font-size:24px;text-decoration:Underline">Work Experience</span>
+            <ul>
+              <li style="margin-left:1%">Position: Applications Engineer</li>
+              <li style="margin-left:1%">Company: Stitch Golf</li>
+              <li style="margin-left:1%">Since: 06-2023</li>
+              <li style="font-size:18px;margin-left:1%">Responsibilities:
+                <ul style="font-size:14px;margin-left:2%">
+                  <li> Primary software engineer for a thriving small business venture</li>
+                  <li> End-to-end development, testing, and deployment of Software to improve B2B, Production, and
+                    Pre-Production processes</li>
+                  <li> Working in an Agile Environment, leveraging the power of Azure Cloud Service for optimal
+                    deployment of software services when necessary</li>
+                  <li> Developing, Upgrading, and Maintaining Applications, Automations, Microservices, Databases, and
+                    APIs that provide efficiencies to workflows in the business</li>
+                  <li> Utilizing software technologies such as: C# (.NET), JavaScript (Express.js, React.js, Node.js),
+                    Flutter, Python (Flask), Azure Functions, Azure Logic Apps, Microsoft Power Apps, SQL, ODATA,
+                    HTML/CSS, Rest APIs, JSON/XML/GraphQL, and Azure Cloud Service </li>
+                </ul>
+              </li>
+            </ul>
+            <span style="font-size:18px">See more Details on my Resume <a href="about.html">Here</a></span>
+          </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul style="font-size:18px">
+            <li style="text-decoration:Bold">School: University of North Carolina Wilmington</li>
+            <li style="text-decoration:Bold">Degree: Bachelors of Science in Computer Science (Systems Concentration)
+            <li style="text-decoration:Bold">GPA: 3.7</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+</body>
+
+</html>
