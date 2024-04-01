@@ -26,7 +26,7 @@ body {
 }
 
 .container {
-    padding: 10px;
+    padding: 5px;
     /* Adjusted padding */
 }
 
@@ -35,6 +35,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-right:0.5%;
 }
 
 .logo {
