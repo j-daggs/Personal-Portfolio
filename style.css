@@ -38,7 +38,7 @@ nav {
 }
 
 .logo {
-    max-width: 100px;
+    max-width: 85px;
     /* Changed to max-width for better responsiveness */
     height: auto;
     border-radius: 20px;
@@ -145,6 +145,7 @@ nav ul li a:hover::after {
     font-weight: bold;
     cursor: pointer;
     position: relative;
+    padding:2px;
 }
 
 .tab-links::after {
@@ -154,7 +155,7 @@ nav ul li a:hover::after {
     background: #232424;
     position: absolute;
     left: 0;
-    bottom: -8px;
+    bottom: -2px;
     transition: 0.5s;
 }
 
